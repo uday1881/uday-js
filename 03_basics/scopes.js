@@ -8,17 +8,17 @@
 
 // yaaha tk tho sari kaahani thik h sab bhadiya h kahani bigadti h jab kahani me aata h ye {} isko scope bhi bolte h
 
-let a = 5; 
-const b = 2;
-var c = 3;
-if(true){
-    let a = 10
-    const b  = 20
-    var c = 30
-}
-console.log(a);
-console.log(b);
-console.log(c);
+// let a = 5; 
+// const b = 2;
+// var c = 3;
+// if(true){
+//     let a = 10
+//     const b  = 20
+//     var c = 30
+// }
+// console.log(a);
+// console.log(b);
+// console.log(c);
 
 // tabhi jo h ham log var ko ignore kr dete h or jada use nahi krte h.
 // kyuki it's dose not have ijjat dogla hota h
@@ -26,3 +26,22 @@ console.log(c);
 // one more important thing, we can use values of global varibales inside the scope.
 // but can not use values of scope variables in global, or globally.
 
+
+
+
+
+
+//________________________________//now Nested Scopes//__________________________________________
+
+function one(){
+    const name = 'uday'
+    console.log('one works');
+    function two(){
+        const website = 'youtube'
+        console.log(name);
+    }
+    //console.log(website); // this cant be acssible here 
+
+    two()
+}
+one()
